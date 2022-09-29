@@ -1,11 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+export const UserContext = React.createContext();
+const username = "Collins";
+
 root.render(
+  // <React.StrictMode>
+  //   <UserContext.Provider value={username}>
+  //     <App  />
+  //   </UserContext.Provider>
+  // </React.StrictMode>
+
   <React.StrictMode>
     <App />
   </React.StrictMode>
